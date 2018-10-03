@@ -1,0 +1,27 @@
+# Project: glut_ttt
+# Makefile created by Dev-C++ 4.9.7.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main.o $(RES)
+LIBS =  -L"C:/DEV-CPP/lib" -mwindows -lopengl32 -lglu32 -lglut32
+INCS =  -I"C:/DEV-CPP/include" 
+BIN  = glut_ttt.exe
+CXXFLAGS = $(INCS)  -g3
+CFLAGS = $(INCS)  -g3
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before glut_ttt.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(OBJ) -o "glut_ttt.exe" $(LIBS) $(CFLAGS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)

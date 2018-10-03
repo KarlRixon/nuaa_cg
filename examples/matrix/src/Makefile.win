@@ -1,0 +1,31 @@
+# Project: matrix
+# Makefile created by Dev-C++ 5.8.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = objs/Matrices.o objs/main.o
+LINKOBJ  = objs/Matrices.o objs/main.o
+LIBS     = -L"C:/song/MinGW/lib" -L"C:/song/MinGW/mingw32/lib" -L"C:/song/downloads/GLUTforMinGW/lib" -static-libstdc++ -static-libgcc -lglut32 -lglu32 -lopengl32 -lwinmm -lgdi32
+INCS     = -I"C:/song/MinGW/include" -I"C:/song/MinGW/mingw32/include" -I"C:/song/MinGW/lib/gcc/mingw32/4.8.1/include" -I"C:/song/downloads/GLUTforMinGW/include"
+CXXINCS  = -I"C:/song/MinGW/include" -I"C:/song/MinGW/mingw32/include" -I"C:/song/MinGW/lib/gcc/mingw32/4.8.1/include" -I"C:/song/MinGW/lib/gcc/mingw32/4.8.1/include/c++" -I"C:/song/downloads/GLUTforMinGW/include"
+BIN      = ../bin/matrix.exe
+CXXFLAGS = $(CXXINCS) -w -pedantic
+CFLAGS   = $(INCS) -w -pedantic
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+objs/Matrices.o: Matrices.cpp
+	$(CPP) -c Matrices.cpp -o objs/Matrices.o $(CXXFLAGS)
+
+objs/main.o: main.cpp
+	$(CPP) -c main.cpp -o objs/main.o $(CXXFLAGS)
