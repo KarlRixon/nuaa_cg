@@ -1,10 +1,9 @@
-﻿生成启动时间为 2018/10/5 17:30:49。
+﻿生成启动时间为 2018/10/19 12:01:59。
      1>项目“C:\Users\24346\Documents\OpenGL\learn\test\test\test\test.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
          test.cpp
-     1>c:\users\24346\documents\opengl\learn\test\test\test\test.cpp(18): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
-     1>c:\users\24346\documents\opengl\learn\test\test\test\test.cpp(24): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+     1>c:\users\24346\documents\opengl\learn\test\test\test\test.cpp(12): warning C4554: “^”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\24346\Documents\OpenGL\learn\test\test\Debug\test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\24346\Documents\OpenGL\learn\test\test\Debug\test.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\24346\Documents\OpenGL\learn\test\test\Debug\test.lib" /MACHINE:X86 Debug\test.obj
          test.vcxproj -> C:\Users\24346\Documents\OpenGL\learn\test\test\Debug\test.exe
@@ -12,4 +11,4 @@
 
 已成功生成。
 
-已用时间 00:00:01.15
+已用时间 00:00:04.62
